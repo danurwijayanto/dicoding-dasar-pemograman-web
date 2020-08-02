@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
 
+/* Global */
 h1{
     color: black;
 }
@@ -12,23 +13,30 @@ h2, h3 {
     color: #00a2c6
 }
 
-
-footer {
-    /* padding: 20px; */
-    color: white;
-    background-color: #00a2c6;
-    padding: 10;
-    text-align: center;
+*{
+    box-sizing: border-box;
 }
 
-footer li{
-    list-style-type: none;
+
+/* Header */
+head{
+    display: inline;
+}
+
+.jumbotron{
+    text-align: center;
+    background-color: #00c8eb;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
 }
 
 nav{
     text-align: center;
     background-color: #00a2c6;
     padding: 1px;
+    position: sticky;
+    top: 0px;
 }
 
 nav a{
@@ -47,6 +55,17 @@ nav a:hover{
     font-weight: bold;
 }
 
+/* Content */
+main{
+    overflow: auto;
+}
+
+#content{
+    float: left;
+    width: 75%;
+    margin-bottom: 20px;
+}
+
 .article-list{
     text-align: justify;
 }
@@ -58,10 +77,32 @@ nav a:hover{
     padding: 15px;
 }
 
-.jumbotron{
-    text-align: center;
-    background-color: #00c8eb;
-    color: white;
-    padding: 20px;
-    font-size: 20px;
+aside{
+    float: right;
+    width: 25%;
+    padding-left: 20px;
 }
+
+/* Footer */
+footer {
+    padding: 15px;
+    color: white;
+    background-color: #00a2c6;
+    text-align: center;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+/* Media Query */
+@media screen and (max-width: 1000px) {
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    aside{
+        margin-bottom: 20px;
+    }
+ }
