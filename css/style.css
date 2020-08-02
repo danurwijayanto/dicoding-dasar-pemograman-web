@@ -33,11 +33,11 @@ head{
 
 .jumbotron{
     text-align: center;
-    /* background-color: #00c8eb; */
-    background-color: #1c1c1c;
+    /* background-color: #1c1c1c; */
     color: white;
     padding: 20px;
     font-size: 20px;
+    background-image: url("../assets/header.jpg");
 }
 
 nav{
@@ -53,12 +53,15 @@ nav a{
     text-decoration: none;
     color: white;
 }
+
 nav ul {
     margin-left: -45px;
 }
+
 nav li{
     display: inline;
     list-style-type: none;
+    margin-left: 30px;
 }
 
 nav a:hover{
@@ -77,15 +80,36 @@ main{
     margin-bottom: 20px;
 }
 
-.article-list{
-    text-align: justify;
-}
-
 .article{
     margin-top: 20px;
     box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 15px;
+    overflow: auto;
+}
+
+.article-list .article:hover{
+    box-shadow: 0px 15px 25px 0 rgba(0, 0, 0, 0.2);
+}
+
+.article-list{
+    text-align: justify;
+}
+
+.article-image{
+    float: left;
+    width: 30%;
+    padding: 20px;
+}
+
+.article-image img{
+    max-width: 100%;
+    max-height: 100%;
+} 
+
+.article-text{
+    float: right;
+    width: 70%;
 }
 
 aside{
@@ -105,6 +129,19 @@ footer {
 
 footer li{
     list-style-type: none;
+}
+
+footer ul{
+    margin-left: -45px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    font-weight: bold;
 }
 
 /* Media Query */
