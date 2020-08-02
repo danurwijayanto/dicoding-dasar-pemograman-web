@@ -2,8 +2,11 @@
     <head>
         <title>Ilmucerdas - Ilmu yang mencerdaskan</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="assets/favicon.png" type="image/gif" sizes="16x16">
         
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js"></script>
+
         <div class="jumbotron">
             <!-- <img src="https://i.imgur.com/EUUXQcf.png" alt="dicoding"> -->
             <h1>Ilmucerdas</h1>
@@ -11,8 +14,8 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="./">Home</a></li>
+                <li><a href="./about">About</a></li>
             </ul>
         </nav>
     </head>
@@ -52,10 +55,16 @@
                 <article>
                     <section class="article">
                         <h2>Penulis : </h2>
-                        <img src="assets/author-avatar.jpg" alt="author-avatar" style="border-radius: 50%;">
+                        <img src="assets/author-avatar.jpg" alt="author-avatar" style="border-radius: 50%;" onload="startTime();">
                         <p>
                             Danur Wijayanto
                         </p>
+                    </section>
+                </article>
+                <article>
+                    <section class="article">
+                        <h2>Jam</h2>
+                            <div id="clock" style="font-size: 2em;"></div>
                     </section>
                 </article>
             </aside>
