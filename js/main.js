@@ -3,7 +3,6 @@ function startTime() {
     var h = today.getHours();
     var m = today.getMinutes();
     var s = today.getSeconds();
-    console.log(h);
     m = checkTime(m);
     s = checkTime(s);
     document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
@@ -13,4 +12,15 @@ function startTime() {
 function checkTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
+}
+
+function goArticleDetail(id) {
+    var base_url = window.location.origin;
+
+    if (id == 1){
+        window.location.href = base_url+"/about.html";
+    }else{
+        window.location.href = base_url+"/about.html";
+    }
+    
 }
