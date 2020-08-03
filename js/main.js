@@ -18,9 +18,9 @@ function goArticleDetail(id) {
     var base_url = window.location.origin;
 
     if (id == 1){
-        window.location.href = base_url+"/about.html";
+        window.location.href = base_url+"/article1-detail.html";
     }else{
-        window.location.href = base_url+"/about.html";
+        window.location.href = base_url+"/article2-detail.html";
     }
     
 }
